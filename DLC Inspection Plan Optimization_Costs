@@ -1,0 +1,30 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Compliant Inspection Schedule" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"Implementation Costs" [color="#64b4f5" style=filled]
+		"Operational Disruptions" [color="#64b4f5" style=filled]
+		"Increased Complexity" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"Minimizing Drive Time " [color="#63c273" style=filled]
+		Smoothing [color="#63c273" style=filled]
+		"Yearly Grid Consistency" [color="#63c273" style=filled]
+	}
+	"Compliant Inspection Schedule" -> "Implementation Costs"
+	"Compliant Inspection Schedule" -> "Operational Disruptions"
+	"Compliant Inspection Schedule" -> "Increased Complexity"
+	"Implementation Costs" -> "Minimizing Drive Time "
+	"Implementation Costs" -> Smoothing
+	"Implementation Costs" -> "Yearly Grid Consistency"
+	"Operational Disruptions" -> "Minimizing Drive Time "
+	"Operational Disruptions" -> Smoothing
+	"Operational Disruptions" -> "Yearly Grid Consistency"
+	"Increased Complexity" -> "Minimizing Drive Time "
+	"Increased Complexity" -> Smoothing
+	"Increased Complexity" -> "Yearly Grid Consistency"
+}

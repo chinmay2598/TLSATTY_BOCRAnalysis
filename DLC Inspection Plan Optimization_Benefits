@@ -1,0 +1,30 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Compliant Inspection Schedule" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"Maximized Inspection Coverage" [color="#64b4f5" style=filled]
+		"Optimized Crew Utilization" [color="#64b4f5" style=filled]
+		"Reduced Operational Costs" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"Minimizing Drive Time" [color="#63c273" style=filled]
+		Smoothing [color="#63c273" style=filled]
+		"Yearly Grid Consistency" [color="#63c273" style=filled]
+	}
+	"Compliant Inspection Schedule" -> "Maximized Inspection Coverage"
+	"Compliant Inspection Schedule" -> "Optimized Crew Utilization"
+	"Compliant Inspection Schedule" -> "Reduced Operational Costs"
+	"Maximized Inspection Coverage" -> "Minimizing Drive Time"
+	"Maximized Inspection Coverage" -> Smoothing
+	"Maximized Inspection Coverage" -> "Yearly Grid Consistency"
+	"Optimized Crew Utilization" -> "Minimizing Drive Time"
+	"Optimized Crew Utilization" -> Smoothing
+	"Optimized Crew Utilization" -> "Yearly Grid Consistency"
+	"Reduced Operational Costs" -> "Minimizing Drive Time"
+	"Reduced Operational Costs" -> Smoothing
+	"Reduced Operational Costs" -> "Yearly Grid Consistency"
+}

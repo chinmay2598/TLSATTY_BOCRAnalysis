@@ -1,0 +1,30 @@
+digraph G {
+	subgraph cluster_0 {
+		color=lightgrey style=filled
+		"Compliant Inspection Schedule" [color="#f57a64" style=filled]
+	}
+	subgraph cluster_1 {
+		color=lightgrey style=filled
+		"Technological Integration" [color="#64b4f5" style=filled]
+		Partnerships [color="#64b4f5" style=filled]
+		"Public Relations Boost" [color="#64b4f5" style=filled]
+	}
+	subgraph cluster_2 {
+		color=lightgrey style=filled
+		"Minimizing Drive Time " [color="#63c273" style=filled]
+		Smoothing [color="#63c273" style=filled]
+		"Yearly Grid Consistency" [color="#63c273" style=filled]
+	}
+	"Compliant Inspection Schedule" -> "Technological Integration"
+	"Compliant Inspection Schedule" -> Partnerships
+	"Compliant Inspection Schedule" -> "Public Relations Boost"
+	"Technological Integration" -> "Minimizing Drive Time "
+	"Technological Integration" -> Smoothing
+	"Technological Integration" -> "Yearly Grid Consistency"
+	Partnerships -> "Minimizing Drive Time "
+	Partnerships -> Smoothing
+	Partnerships -> "Yearly Grid Consistency"
+	"Public Relations Boost" -> "Minimizing Drive Time "
+	"Public Relations Boost" -> Smoothing
+	"Public Relations Boost" -> "Yearly Grid Consistency"
+}
